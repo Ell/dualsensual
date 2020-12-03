@@ -3,7 +3,7 @@
     "version": "0.1.0",
     "license": "MIT",
     "scripts": {
-        "build": "parcel build ./src/index.html",
+        "build": "rm -rf ./dist && parcel build src/index.html && cp ./_redirects ./dist/_redirects",
         "watch": "parcel ./src/index.html",
         "start": "yarn watch"
     },
@@ -24,15 +24,5 @@
     },
     "browserslist": [
         "last 1 Chrome version"
-    ],
-    "targets": {
-        "default": {
-            "engines": {
-                "browsers": "> 0.25%"
-            },
-            "distDir": "dist",
-            "publicUrl": ".",
-            "sourceMap": false
-        }
-    }
+    ]
 }
