@@ -1,7 +1,7 @@
 import "./site.scss";
 
-import React from "react";
-import ReactDom from "react-dom";
+import * as React from "react";
+import * as ReactDom from "react-dom";
 
 import { Route } from "wouter";
 
