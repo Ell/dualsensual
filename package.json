@@ -21,7 +21,7 @@
         "react-dom": "^17.0.1",
         "wouter": "^2.6.0"
     },
-    "browserlist": [
+    "browserslist": [
         "last 1 Chrome version"
     ],
     "targets": {
