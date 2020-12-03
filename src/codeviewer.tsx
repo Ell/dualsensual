@@ -21,6 +21,8 @@ export const CodeViewer: React.FC = () => {
   }, [audioDevices]);
 
   return (
-    <div className="codeviewer" />
+    <div className="codeviewer">
+      {audioDevices && audioDevices.length > 0 && JSON.stringify(audioDevices[0], null, 2)}
+    </div>
   )
 }
